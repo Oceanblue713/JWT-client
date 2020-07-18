@@ -21,7 +21,7 @@ const Dashboard = ({setAuth}) => {
 
   useEffect(() => {
     getName()
-  });
+  }, []);
 
   const logout = (e) => {
     e.preventDefault()
