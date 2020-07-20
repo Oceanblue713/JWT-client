@@ -1,10 +1,14 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import './App.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Register from './components/Register';
 
+toast.configure();
 
 function App() {
 
